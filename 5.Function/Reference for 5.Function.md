@@ -1,10 +1,34 @@
-### Reference for **4. Array**
+# Reference for **5. Function**
+
+***
+
+- setTimeout(함수, 시간)
+
+  > /타이머_ID
+  >
+  > 입력한 시간 후에 함수를 한 번 호출한다
+
+- clearTimeout(타이머_ID)
+
+  > setTimeout() 함수로 설정한 타이머를 제거한다
+
+- setInterval(함수, 시간)
+
+  > /타이머_ID
+  >
+  > 입력한 시간마다 함수를 호출
+
+- clearInterval(타이머_ID)
+
+  > setInterval() 함수로 설정한 타이머를 제거한다
+
+
 
 ***
 
 
 
-#### 배열
+## <u>배열</u>
 
 ***
 
@@ -41,12 +65,30 @@
   > /해당 요소의 인덱스
   >
   > 여러개면 제일 낮은 인덱스 반환
+  
+- forEach(function(value, index, array))
+
+  > 배열 내부 요소를 사용해서 콜백 함수를 호출
+  >
+  > 이를 비롯한 콜백 함수를 이용한 함수들은 다소 신기하게 느껴진다
+  >
+  > 다소 복잡하면서도 세부적인 기능들을 다룬다
+
+- map(function(value, index, array))
+
+  > /변경된 배열
+  >
+  > 콜백 함수에서 리턴한 값들을 기반으로 새로운 배열을 만든다
+
+- filter(function(value, index, array))
+
+  > /새로운 배열 (콜백 함수의 리턴 값이 true인 요소들의 배열)
 
 ***
 
+   
 
-
-#### for
+## <u>for</u>
 
 ***
 

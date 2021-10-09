@@ -1,10 +1,10 @@
-### Reference for **4. Array**
+# Reference for **4. Array**
 
 ***
 
 
 
-#### 배열
+## <u>배열</u>
 
 ***
 
@@ -44,9 +44,9 @@
 
 ***
 
+   
 
-
-#### for
+## <u>for</u>
 
 ***
 
