@@ -1,4 +1,4 @@
-# Reference for **5. Function**
+# JS_Reference
 
 ***
 
@@ -26,11 +26,61 @@
 
 ***
 
+## <u>Number, String, Boolean</u>
+
+- valueOf()
+
+  > /해당 객체의 값
+  >
+  > 보통 값을 추출한다고 표현한다
 
 
-## <u>배열</u>
+
+
 
 ***
+
+
+
+## <u>Number</u>
+
+- toFixed(n)
+
+  > /소수점 n번째 자리까지만 자른 수
+
+- isFinite(a)
+
+  > / bool
+  >
+  > a가 무한대이면(Infinity/-Infinity) true
+
+- isNaN(a)
+
+  > /bool
+  >
+  > a가 NaN(Not a Number)이면 true
+
+***
+
+## <u>String</u> 
+
+- trim()
+
+  > / 앞뒤 공백을 없엔 문자열
+
+- split(a=' ')
+
+  > /새로 생성된 배열
+  >
+  > 문자열을 a로 잘라서 배열을 만들어 반환한다
+  >
+  > 잘은 모르겠는데 알고리즘 대회 같은데서 많이 쓴다고 함
+
+
+
+***
+
+## <u>Array</u>
 
 ##### Property
 
@@ -84,13 +134,43 @@
 
   > /새로운 배열 (콜백 함수의 리턴 값이 true인 요소들의 배열)
 
+- isArray(object)
+
+  > /bool
+  >
+  > 해당 객체가 배열이면 true
+
 ***
 
-   
+## JSON
+
+- stringify(object, null, 2)
+
+  > /객체를 JSON 문자열로 출력
+  >
+  > 보통 위의 세팅대로 사용한다고함
+  >
+  > 2번째 매개변수는 잘 모르겠고, 3번째 매개변수는 들여쓰기 칸 수
+
+- parse(JSON)
+
+  > /object
+  >
+  > json 문자열을 객체로 변환
+
+***
+
+## Math
+
+- random()
+
+  > / 0<=n<1 범위의 랜덤 숫자 반환
+
+***
+
+
 
 ## <u>for</u>
-
-***
 
 - for (const i in todos)
 
