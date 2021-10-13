@@ -1,4 +1,4 @@
-# JS_Reference
+# Reference for **7. DOM**
 
 ***
 
@@ -53,7 +53,7 @@
   > / bool
   >
   > a가 무한대이면(Infinity/-Infinity) true
-
+  
 - isNaN(a)
 
   > /bool
@@ -115,7 +115,7 @@
   > /해당 요소의 인덱스
   >
   > 여러개면 제일 낮은 인덱스 반환
-
+  
 - forEach(function(value, index, array))
 
   > 배열 내부 요소를 사용해서 콜백 함수를 호출
@@ -133,7 +133,7 @@
 - filter(function(value, index, array))
 
   > /새로운 배열 (콜백 함수의 리턴 값이 true인 요소들의 배열)
-
+  
 - isArray(object)
 
   > /bool
