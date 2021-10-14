@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js">
-    </script>
-    <script >
-        const books = [{
-            name: '혼자 공부하는 파이썬',
-            price: 18000,
-            publisher: "한빛미디어"
-        },{
-            name: 'HTML 웹 프로그래밍 입문',
-            price: 26000,
-            publisher: "한빛아카데미"
-        },{
-            name: '머신러닝',
-            price: 30000,
-            publisher: "위키북스"
-        },{
-            name: '딥러닝을 위한 수학',
-            price: 25000,
-            publisher: "위키북스"
-        }]
+    <title>DOMContentLoaded</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const divA = document.querySelector('#first')
+            const divB = document.querySelector('hr')
+            const h1 = document.createElement('h1')
+            h1.textContent = '이동하는 태그'
 
-        const output = _.orderBy(books, (book) => book.name)
-        console.log(JSON.stringify(output, null, 2))                                                                    
+            const toFirst= () => {
+                divA.appendChild(h1)
+                setTimeout(toSecond, 1000)
+            }
+            const toSecond= () => {
+                divB.appendChild(h1)
+                setTimeout(toFirst, 1000)
+            }
+
+            toFirst()
+        })
     </script>
 </head>
+<body>
+    <div id="first">
+        <h1>첫 번째 div 태그 내부</h1>
+    </div>
+    <hr>
+    <div id="second">
+        <h1>두 번째 div 태그 내부</h1>
+    </div>
+</body>
 </html>
