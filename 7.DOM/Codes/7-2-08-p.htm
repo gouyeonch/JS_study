@@ -7,9 +7,8 @@
             let 현재값
             let 변환상수 = 10
 
-            const select = document.querySelector('select')
-            const input = document.querySelector('input')
-            const span = document.querySelector('span')
+            const select = document.querySelectorAll('select')
+            const input = document.querySelectorAll('input')
 
             const calculate = () => {
                 span.textContent = (현재값*변환상수).toFixed(2)
@@ -22,6 +21,8 @@
 				calculate()
 			})
 
+			select.forEach()
+
 			input.addEventListener('keyup', (event) => {
 			    현재값 = Number(event.currentTarget.value)
 			    calculate()
@@ -33,8 +34,14 @@
     </style>
 </head>
 <body>
-    <input type="text"> cm =
-    <span></span>
+    <input type="text">
+    <select>
+        <option value="10">mm</option>
+        <option value="0.1">m</option>
+        <option value="0.393701">inch</option>
+    </select>
+
+    <input type="text">
     <select>
         <option value="10">mm</option>
         <option value="0.1">m</option>
