@@ -7,19 +7,25 @@
             let 현재값
             let 변환상수 = 10
 
-            const select = document.querySelectorAll('select')
-            const input = document.querySelectorAll('input')
+            const selects = document.querySelectorAll('select')
+            const inputs = document.querySelectorAll('input')
 
             const calculate = () => {
                 span.textContent = (현재값*변환상수).toFixed(2)
             }
 			
-			select.addEventListener('change', (event) => {
-				const options = event.currentTarget.options
-				const index = event.currentTarget.options.selectedIndex
-				변환상수 = Number(options[index].value)
-				calculate()
+			selects.forEach((select) => {
+                select.현재값 = null
+                select.변환상수 = 10
+
+				select.addEventListener('change', (event) => {
+					const options = event.currentTarget.options
+					const index = event.currentTarget.options.selectedIndex
+					select.변환상수 = Number(options[index].value)
+					calculate()
+			    })
 			})
+			
 
 			select.forEach()
 
@@ -49,3 +55,4 @@
     </select>
 </body>
 </html>
+모르겠다
