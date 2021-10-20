@@ -352,7 +352,15 @@
 
 ***
 
+## <u>예외 객체</u>(e, exception)
 
+- name
+
+  > 예외 이름
+
+- message
+
+  > 예외 메시지
 
 ## <u>for</u>
 
