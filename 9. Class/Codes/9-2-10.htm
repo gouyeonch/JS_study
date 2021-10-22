@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOMContentLoaded</title>
+    <script>
+        class Square {
+
+            #length
+
+            constructor(length){
+                this.length = length
+            }
+
+            set length(value){
+                if(value<=0){
+                    throw '길이는 0보다 커야 합니다'
+                }
+                this.#length = value
+            }
+
+            get length(){
+                return this.#length
+            }            
+
+            get perimeter(){
+                return 4* this.#length
+            }
+            get area(){
+                return this.#length * this.#length
+            }
+        }
+
+        const squareA = new Square(10)        
+        console.log(`한 변의 길이는: ${squareA.length}`)
+        console.log(`둘레: ${squareA.perimeter}`)
+        console.log(`넓이: ${squareA.area}`)
+
+        const squareB = new Square(-10)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
